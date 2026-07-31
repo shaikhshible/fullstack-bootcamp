@@ -7,7 +7,14 @@ function App() {
         Welcome to my React portfolio
         </p>
 
-        <h3>My SkillS</h3>
+        <h3>About Me</h3>
+
+        <p>
+          I completed may graduation onn Computer Science and Engineeering.
+          I enjoy learning web development and full-stack application.
+          </p>
+
+        <h3>SkillS</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -17,7 +24,7 @@ function App() {
 
         <h3>My Goal</h3>
         <p>
-          I want to become a Full Stack Developer and get a software engineering job in Finland.
+          My goal is to become a Full Stack Developer in Finland.
         </p>
       </div>
   );
