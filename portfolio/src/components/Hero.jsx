@@ -1,10 +1,12 @@
+import "./Hero.css"
+
 function Hero() {
   return (
-    <section>
+    <section className="hero">
       <h1>Hello! I'am Shaikh Shible</h1>
 
       <p>
-        I'm a Full Stack Developer
+        Aspiring Full Stack Developer
         </p>
       </section>
   );

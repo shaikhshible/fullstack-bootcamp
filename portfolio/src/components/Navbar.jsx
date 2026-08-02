@@ -1,3 +1,5 @@
+import "./Navbar.css";
+
 function Navbar() {
   return (
     <nav>
@@ -7,6 +9,7 @@ function Navbar() {
         <li>Home</li>
         <li>About</li>
         <li>Skills</li>
+        <li>Projects</li>
         <li>Contact</li>
         </ul>
       </nav>

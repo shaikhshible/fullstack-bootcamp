@@ -1,10 +1,13 @@
+import "./About.css";
+
 function About () {
   return (
-    <section>
+    <section className="about">
       <h2>About Me</h2>
 
       <p>
-        I'm always develop my React learn to become a good Full Stack Developer.
+        I am learning React and improving my web development skills every day.
+        My goal is to become a professional Full Stack Developer.
         </p>
       </section>
   );

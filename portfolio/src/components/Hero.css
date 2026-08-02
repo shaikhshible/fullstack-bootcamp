@@ -1,0 +1,13 @@
+.hero {
+  padding: 80px 20 px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+}
+
+.hero p {
+  font-size: 22px;
+  color: gray;
+}
