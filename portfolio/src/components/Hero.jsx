@@ -9,7 +9,7 @@ function Hero() {
         alt="Shaikh Shible"
         className="profile-image"
         />
-        
+
       <h1>
         Hello! I'm <span>Shaikh Shible</span>
       </h1>
@@ -18,9 +18,9 @@ function Hero() {
         Aspiring Full Stack Developer
       </p>
 
-      <div>
-        <button>Download CV</button>
-        <button>Contact Me</button>
+      <div className="buttons">
+        <button className="btn-primary">Download CV</button>
+        <button className="btn-secondary">Contact Me</button>
       </div>
 
       </section>
