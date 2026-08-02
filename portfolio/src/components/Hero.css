@@ -1,6 +1,15 @@
 .hero {
-  padding: 80px 20 px;
+  padding: 100px 20 px;
   text-align: center;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #61dafb;
+  margin-bottom: 20px;
 }
 
 .hero h1 {
@@ -10,4 +19,45 @@
 .hero p {
   font-size: 22px;
   color: gray;
+}
+
+.hero span{
+  color: #61dafb;
+}
+
+.hero.buttons{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary{
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #61dafb;
+  color: #1a1a1a;
+}
+
+.btn-primary:hover{
+  background-color: #4fc3e6;
+}
+
+.btn-secondary{
+  background-color: transparent;
+  color: white;
+  border: 2px solid #61dafb;
+}
+
+.btn-secondary:hover{
+  background-color: #61dafb;
+  color: #1a1a1a;
 }

@@ -2,10 +2,10 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav>
+    <nav className="navbar">
       <h2>Shaikh Shible</h2>
 
-      <ul>
+      <ul className="nav-links">
         <li>Home</li>
         <li>About</li>
         <li>Skills</li>
