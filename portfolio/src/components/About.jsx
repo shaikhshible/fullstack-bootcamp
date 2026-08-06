@@ -6,8 +6,9 @@ function About () {
       <h2>About Me</h2>
 
       <p>
-        I am learning React and improving my web development skills every day.
-        My goal is to become a professional Full Stack Developer.
+        I am an aspiring Full Stack Developer with a passion for building modern web applications. 
+        I enjoy learning React, JavaScript, 
+        and backend technologies while continuously improving my programming skills.
         </p>
       </section>
   );
