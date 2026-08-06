@@ -7,11 +7,11 @@
   align-items: center;
 
   padding: 20px 40px;
-  background-color: #282c34;
+  background-color: var(--card-color);
 }
 
 .logo {
-  color: white;
+  color: var(--text-color);
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -42,6 +42,21 @@
 
 .nav-links li a.active {
   color:  #61dafb;
+}
+
+.theme-btn {
+  background: transparent;
+  border: 2px solid #61dafb;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  background: #61dafb;
+  color: #1a1a1a;
 }
 
 @media (max-width: 768px) {

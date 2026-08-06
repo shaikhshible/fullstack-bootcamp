@@ -1,4 +1,5 @@
 import "./Contact.css";
+import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 
 function Contact () {
   return(
@@ -27,7 +28,7 @@ function Contact () {
         rel=" noopener noreferrer"
         className="contact-btn"
         >
-          Email Me 
+          <FaEnvelope /> Email Me 
         </a>
 
         <a 
@@ -36,7 +37,7 @@ function Contact () {
         rel=" noopener noreferrer"
         className="contact-btn"
         >
-          GitHub
+          <FaGithub /> GitHub
         </a>
 
         <a 
@@ -45,7 +46,7 @@ function Contact () {
         rel="nooopener noreferrer"
         className="contact-btn"
         >
-          LinkedIn
+          <FaLinkedin /> LinkedIn
         </a>
 
         </div>

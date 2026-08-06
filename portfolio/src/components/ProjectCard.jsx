@@ -8,7 +8,11 @@ function ProjectCard({title, description, link}) {
 
       <p>{description}</p>
 
-      <a href={link}>
+      <a 
+      href="https://github.com/shaikhshible"
+      traget="_blank"
+      rel="noreferrer"
+      >
         <button>View Project</button>
       </a>
       </div>

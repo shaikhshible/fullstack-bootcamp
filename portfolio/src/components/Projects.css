@@ -15,11 +15,12 @@
   background: #242832;
   padding: 25px;
   border-radius: 12px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(97,218,251,.25);
 }
 
 .project-card h3 {

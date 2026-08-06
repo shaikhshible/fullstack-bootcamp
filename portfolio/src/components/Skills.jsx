@@ -7,10 +7,13 @@ function Skills () {
 
       <ul>
         <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+        <li>CSS3</li>
+        <li>JavaScript (ES6+)</li>
         <li>React</li>
-        </ul>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Responsive Design</li>
+      </ul>
       </section>
   );
 }

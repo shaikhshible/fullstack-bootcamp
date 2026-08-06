@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return(
-    <section id="project" className="projects">
+    <section id="projects" className="projects">
       <h2>Projects</h2>
 
       <div className="project-container">
@@ -11,19 +11,19 @@ function Projects() {
         <ProjectCard
         title="Personal Portfolio"
         description="Responsive portfolio website built with React and CSS."
-        link="#"
+        link="https://github.com/shaikhshible/fullstack-bootcamp"
         />
 
         <ProjectCard
         title="Weather App"
         description="Weather application using React and OpenWeather API."
-        link="#"
+        link="https://github.com/shaikhshible"
         />
 
         <ProjectCard
         title="Todo App"
         description="Task management application built with React."
-        link="#"
+        link="https://github.com/shaikhshible"
         />
 
       </div>

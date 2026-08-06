@@ -2,6 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.dark {
+  --bg-color: #1a1a1a;
+  --text-color: white;
+  --card-color: #282c34;
+}
+
+.light {
+  --bg-color: white;
+  --text-color: black;
+  --card-color: #f4f4f4;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;

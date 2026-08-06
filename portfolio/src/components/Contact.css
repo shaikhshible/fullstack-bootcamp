@@ -28,8 +28,12 @@
 }
 
 .contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
   text-decoration: none;
-  color: black;
+  color:  #1a1a1a;
   background: #61dafb;
   padding: 12px 22px;
   border-radius: 8px;
@@ -37,5 +41,6 @@
 }
 
 .contact-btn:hover {
+  transform: translateY(-3px);
   background: white;
 }
