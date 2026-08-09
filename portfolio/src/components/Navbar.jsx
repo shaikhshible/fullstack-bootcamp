@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 function Navbar({darkMode, setDarkMode}) {
 
