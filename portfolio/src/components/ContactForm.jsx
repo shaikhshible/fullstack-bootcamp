@@ -6,8 +6,17 @@ function ContactForm() {
   const[email, setEmail] = useState("");
   const[message, setMessage] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Form submitted");
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  }
   return(
-    <section>
+    <form onSubmit={handleSubmit}>
       <h2>Contact Me</h2>
 
       <input
@@ -34,11 +43,16 @@ function ContactForm() {
       <p>your email is {email}</p>
       <p>Your message:
         {message}
-        </p>
+      </p>
+
+      <button
+      type="submit"
+      >
+        Send Message
+        </button>
       
-      </section>
+      </form>
   );
   
 }
-
 export default ContactForm;
