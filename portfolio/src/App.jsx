@@ -6,8 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Message from "./components/Message";
-import ShowNotification from "./components/ShowNotification";
+import LoadingExample from "./components/LoadingExample";
 
 function App() {
 
@@ -29,8 +28,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <Message />
-        <ShowNotification />
+        <LoadingExample />
       </main>
       
       <footer>
