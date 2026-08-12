@@ -9,9 +9,9 @@ function ProjectCard({title, description, link}) {
       <p>{description}</p>
 
       <a 
-      href="https://github.com/shaikhshible"
-      traget="_blank"
-      rel="noreferrer"
+        href={link}
+        target="_blank"
+        rel="noreferrer"
       >
         <button>View Project</button>
       </a>
