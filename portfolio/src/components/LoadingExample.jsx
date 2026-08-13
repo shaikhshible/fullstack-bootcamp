@@ -20,7 +20,7 @@ function LoadingExample() {
       >
         {loading ? "Loading..." : "Load Data"}
       </button>
-
+      
       {loading && <p>Loading...</p>}
 
       {!loading && <p>Data loaded successfully!</p>}

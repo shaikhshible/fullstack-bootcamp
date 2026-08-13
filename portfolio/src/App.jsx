@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import LoadingExample from "./components/LoadingExample";
+import FormValidation from "./components/FormValidation";
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <LoadingExample />
+        <FormValidation />
       </main>
       
       <footer>
