@@ -87,12 +87,3 @@ FullStack-Bootcamp/
     ├── package.json
     └── README.md
 ```
-
-### 2. Save the file
-
-Now check for conflict markers.
-
-Run:
-
-```bash
-git status
