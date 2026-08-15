@@ -1,16 +1,98 @@
-# React + Vite
+# Full Stack Bootcamp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+**Name:** Shaikh Shible
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Goal
 
-## React Compiler
+Become a Full Stack Developer.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This repository contains my learning progress, exercises, and projects while studying full-stack web development.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Portfolio Project
+
+This portfolio is built with:
+
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+- React Icons
+
+### Current Features
+
+- Responsive portfolio layout
+- Navigation bar
+- Hero section
+- About section
+- Skills section
+- Projects section
+- Contact section
+- Contact form
+- Dark/light mode
+- React state management
+- Conditional rendering
+- Dynamic project cards
+- Form validation
+
+---
+
+## Learning Progress
+
+### Day 1
+
+- Installed Node.js
+- Installed Git
+- Created my first Git repository
+
+### Day 12
+
+- Practiced `.map()` for dynamic lists
+- Created dynamic project cards
+- Practiced React components
+
+### Day 13
+
+- Practiced conditional rendering
+- Practiced ternary operator
+- Practiced `&&`
+- Practiced loading states
+- Practiced `useState`
+- Practiced `setTimeout()`
+
+### Day 14
+
+- Practiced controlled forms
+- Practiced form submission
+- Practiced HTML validation
+- Practiced custom React validation
+- Practiced error state
+- Practiced early `return`
+
+---
+
+## Project Structure
+
+```text
+FullStack-Bootcamp/
+└── portfolio/
+    ├── public/
+    ├── src/
+    │   ├── assets/
+    │   └── components/
+    ├── package.json
+    └── README.md
+```
+
+### 2. Save the file
+
+Now check for conflict markers.
+
+Run:
+
+```bash
+git status
