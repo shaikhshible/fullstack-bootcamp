@@ -7,6 +7,8 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FormValidation from "./components/FormValidation";
+import EffectExample from "./components/EffectExample";
+import UserList from "./components/UserList";
 
 function App() {
 
@@ -29,6 +31,8 @@ function App() {
         <Projects />
         <Contact />
         <FormValidation />
+        <EffectExample />
+        <UserList />
       </main>
       
       <footer>

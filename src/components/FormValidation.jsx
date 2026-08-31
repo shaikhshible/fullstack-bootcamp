@@ -5,6 +5,15 @@ function FormValidation(){
   const[email, setEmail] = useState("");
   const[message, setMessage] = useState("");
   const[error, setError] = useState("");
+  const[success, setSuccess] = useState(false);
+
+  const clearForm = () =>{
+    setName("");
+    setEmail("");
+    setMessage("");
+    setError("");
+    setSuccess("");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +36,12 @@ function FormValidation(){
     setError("");
 
     console.log("Form submitted");
+
+    setSuccess(true);
+
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return(
@@ -34,6 +49,8 @@ function FormValidation(){
       <h2>Contact Form</h2>
 
       {error && <p>{error}</p>}
+
+      {success && <p>Message sent successfully!</p>}
       
       <input
       type="text"
@@ -60,6 +77,10 @@ function FormValidation(){
 
       <button type="submit">
         Send Message
+      </button>
+
+      <button type="button" onClick={clearForm}>
+        Clear Form
       </button>
     </form>
   );
