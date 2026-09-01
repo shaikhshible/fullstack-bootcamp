@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import FormValidation from "./components/FormValidation";
 import EffectExample from "./components/EffectExample";
 import UserList from "./components/UserList";
+import RandomUser from "./components/RandomUser";
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
         <Contact />
         <FormValidation />
         <EffectExample />
-        <UserList />
+        <RandomUser />
       </main>
       
       <footer>
