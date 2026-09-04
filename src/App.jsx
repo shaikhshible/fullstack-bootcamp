@@ -6,10 +6,11 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import FormValidation from "./components/FormValidation";
-import EffectExample from "./components/EffectExample";
-import UserList from "./components/UserList";
-import RandomUser from "./components/RandomUser";
+//import FormValidation from "./components/FormValidation";
+//import EffectExample from "./components/EffectExample";
+//import UserList from "./components/UserList";
+//import RandomUser from "./components/RandomUser";
+import UserSearch from "./components/UserSearch";
 
 function App() {
 
@@ -31,9 +32,8 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <FormValidation />
-        <EffectExample />
-        <RandomUser />
+        <UserSearch />
+
       </main>
       
       <footer>
