@@ -10,7 +10,8 @@ import Footer from "./components/Footer";
 //import EffectExample from "./components/EffectExample";
 //import UserList from "./components/UserList";
 //import RandomUser from "./components/RandomUser";
-import UserSearch from "./components/UserSearch";
+//import UserSearch from "./components/UserSearch";
+import GitHubUser from "./components/GitHubUser";
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <UserSearch />
+        <GitHubUser />
 
       </main>
       
