@@ -1,4 +1,7 @@
 import { useState } from "react";
+import UserProfile from "./UserProfile";
+import SearchForm from "./SearchForm";
+
 
 function GitHubUser() {
   const [username, setUsername] = useState("");
@@ -47,16 +50,11 @@ function GitHubUser() {
   return (
     <section>
       <h2>GitHub User Search</h2>
-    <input
-      type="text"
-      placeholder="Enter GitHub username"
-      value={username}
-      onChange={(e) => setUsername(e.target.value)}
-    />
-
-    <button onClick={searchUser}>
-      Search
-    </button>
+      <SearchForm
+        username={username}
+        setUsername={setUsername}
+        searchUser={searchUser}
+      />
 
     <button onClick={clearSearch}>
       Clear
@@ -65,32 +63,8 @@ function GitHubUser() {
     {loading && <p>Loading...</p>}
     {error && <p>{error}</p>}
 
-    {user && (
-      <div>
-        <img
-          src={user.avatar_url}
-          alt={user.login}
-          width="120"
-          />
+    {user && <UserProfile user={user} />}
 
-          <h3>{user.name || user.login}</h3>
-          <p>Username: {user.login}</p>
-          <p>Bio: {user.bio || "No bio available."}</p>
-          <p>Followers: {user.followers}</p>
-          <p>Following: {user.following}</p>
-          <p>Public Repositories: {user.public_repos}</p>
-          <p>Phone: {user.phone || "Not provided."}</p>
-          <p>Email: {user.email || "Not provided."}</p>
-          <p>Location: {user.location || "Not provided."}</p>
-          <a
-          href={user.html_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-            View GitHub Profile
-          </a>
-      </div>
-    )}
     </section>
   );
 }
