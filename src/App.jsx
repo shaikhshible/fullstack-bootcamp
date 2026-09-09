@@ -11,7 +11,8 @@ import Footer from "./components/Footer";
 //import UserList from "./components/UserList";
 //import RandomUser from "./components/RandomUser";
 //import UserSearch from "./components/UserSearch";
-import GitHubUser from "./components/GitHubUser";
+//import GitHubUser from "./components/GitHubUser";
+import JobApplication from "./components/JobApplication";
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <GitHubUser />
+        <JobApplication />
 
       </main>
       
