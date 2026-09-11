@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 //import UserSearch from "./components/UserSearch";
 //import GitHubUser from "./components/GitHubUser";
 import JobApplication from "./components/JobApplication";
+import GitHubAutoSearch from "./components/GitHubAutoSearch";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Projects />
         <Contact />
         <JobApplication />
+        <GitHubAutoSearch />
 
       </main>
       
