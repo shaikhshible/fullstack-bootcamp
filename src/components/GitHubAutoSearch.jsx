@@ -11,20 +11,30 @@ function GitHubAutoSearch() {
     if (username.length < 3) {
       setUser(null);
       setError(null);
+      setLoading(false);
       return;
     }
 
+    const timer = setTimeout(() => {
     const fetchUser = async () => {
       setLoading(true);
-      setError(null);
+      setError("");
 
       try {
         const response = await fetch(
           `https://api.github.com/users/${username}`
         );
 
+        if (response.status === 404) {
+          throw new Error("GitHub user not found");
+        }
+
+        if (response.status === 403) {
+          throw new Error("GitHub API rate limit exceeded. Please try again later.");
+        }
+
         if (!response.ok) {
-          throw new Error("User not found");
+          throw new Error("Failed to fetch GitHub user.");
         }
 
         const data = await response.json();
@@ -33,13 +43,18 @@ function GitHubAutoSearch() {
       }
       catch (error) {
         console.error(error);
-        setError("GitHub user not found.");
         setUser(null);
-      }
+        setError(error.message);
+      } 
+      finally {
       setLoading(false);
+      }
     };
     fetchUser();
-    }, [username]);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [username]);
 
   const clearSearch = () => {
     setUsername("");
