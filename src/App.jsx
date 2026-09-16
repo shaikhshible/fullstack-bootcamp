@@ -12,8 +12,10 @@ import Footer from "./components/Footer";
 //import RandomUser from "./components/RandomUser";
 //import UserSearch from "./components/UserSearch";
 //import GitHubUser from "./components/GitHubUser";
-import JobApplication from "./components/JobApplication";
-import GitHubAutoSearch from "./components/GitHubAutoSearch";
+//import JobApplication from "./components/JobApplication";
+//import GitHubAutoSearch from "./components/GitHubAutoSearch";
+import FetchExample from "./components/FetchExample";
+
 
 function App() {
 
@@ -35,8 +37,9 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <JobApplication />
-        <GitHubAutoSearch />
+        {/*<JobApplication />*/}
+        {/*<GitHubAutoSearch />*/}
+        <FetchExample />
 
       </main>
       
