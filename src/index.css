@@ -2,22 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.dark {
-  --bg-color: #1a1a1a;
-  --text-color: white;
-  --card-color: #282c34;
-}
-
-.light {
-  --bg-color: white;
-  --text-color: black;
-  --card-color: #f4f4f4;
-}
-
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
+  --text: var(--text-color);
+  --text-h: var(--text-color);
+  --bg: var(--bg-color);
+
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -35,7 +24,7 @@ html {
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
-  background: var(--bg);
+  background: transparent;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,25 +35,6 @@ html {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
 
 body {
   margin: 0;
@@ -128,4 +98,41 @@ code {
 
 @media (max-width: 768px) {
 
+}
+
+.app {
+  min-height: 100vh;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.app.dark {
+  --bg-color: #1a1a1a;
+  --text-color: var(--text-color);
+  --card-color: #282c34;
+}
+
+.app.light {
+  --bg-color: white;
+  --text-color: var(--text-color);
+  --card-color: #f4f4f4;
+}
+
+.app.dark main,
+.app.dark footer,
+.app.dark header {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.app.light main,
+.app.light footer,
+.app.light header {
+  background-color: var(--bg-color) !important;
+  color: black !important;
 }

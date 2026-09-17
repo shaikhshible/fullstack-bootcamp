@@ -1,6 +1,7 @@
 .projects {
   padding: 80px 20px;
   text-align: center;
+  color: var(--text-color);
 }
 
 .project-container {
@@ -12,7 +13,8 @@
 
 .project-card {
   width: 25%;
-  background: #242832;
+  background: var(--card-color);
+  color: var(--text-color);
   padding: 25px;
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -20,7 +22,7 @@
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(97,218,251,.25);
+  box-shadow: 0 15px 30px rgba(97, 218, 251, 0.25);
 }
 
 .project-card h3 {
@@ -29,7 +31,7 @@
 
 .project-card p {
   margin: 15px 0;
-  color: #ccc;
+  color: var(--text-color);
 }
 
 .project-card button {
@@ -42,14 +44,13 @@
   transition: all 0.3s ease;
 }
 
-.project-card button:hover{
+.project-card button:hover {
   color: white;
   background-color: #1a1a1a;
   transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-
   .project-container {
     flex-direction: column;
     align-items: center;

@@ -1,7 +1,10 @@
 import "./Navbar.css";
 import { FaSun, FaMoon } from "react-icons/fa";
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
 
-function Navbar({darkMode, setDarkMode}) {
+function Navbar() {
+  const {darkMode, setDarkMode} = useContext(ThemeContext);
 
   return (
     <nav className="navbar">

@@ -5,9 +5,9 @@
   z-index: 1000;
   justify-content: space-between;
   align-items: center;
-
   padding: 20px 40px;
   background-color: var(--card-color);
+  transition: background-color 0.3s ease;
 }
 
 .logo {
@@ -21,14 +21,13 @@
   display: flex;
   align-items: center;
   gap: 20px;
-
   list-style: none;
   margin-top: 0;
   padding: 0;
 }
 
 .nav-links li a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   padding: 8px 12px;
   cursor: pointer;
@@ -41,13 +40,13 @@
 }
 
 .nav-links li a.active {
-  color:  #61dafb;
+  color: #61dafb;
 }
 
 .theme-btn {
   background: transparent;
   border: 2px solid #61dafb;
-  color: white;
+  color: var(--text-color);
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
@@ -71,4 +70,3 @@
     gap: 15px;
   }
 }
-

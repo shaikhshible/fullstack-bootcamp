@@ -1,4 +1,4 @@
-import { useState } from "react";
+//import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -15,19 +15,19 @@ import Footer from "./components/Footer";
 //import JobApplication from "./components/JobApplication";
 //import GitHubAutoSearch from "./components/GitHubAutoSearch";
 import FetchExample from "./components/FetchExample";
-
+import ThemeExample from "./components/ThemeExample";
+import { useContext } from "react";
+import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(true);
+  const { darkMode } = useContext(ThemeContext);
 
   return(
-    <div className={darkMode ? "dark" : "light"}>
+    <div className={darkMode ? "app dark" : "app light"}>
 
       <header>
         <Navbar 
-          darkMode={darkMode}
-          setDarkMode={setDarkMode}
         />
       </header>
       
@@ -40,6 +40,7 @@ function App() {
         {/*<JobApplication />*/}
         {/*<GitHubAutoSearch />*/}
         <FetchExample />
+        <ThemeExample />
 
       </main>
       
